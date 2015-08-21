@@ -4,25 +4,31 @@ body {
 }
 
 #logo {
-    display:block;
+    position:fixed;
+    z-index:-1;
 }
-
+#blank {
+    height:105vh;
+}
 #art {
 	position: relative;
+    top:-15em;
 	width: 100vw;
 	height: 105vh;
-	z-index: 10;
 }
 
 #thisis {
 	position: absolute;
     top:0px;
-	z-index: 10000;
 	height: 260px;
 	width: 800px;
 	fill-opacity: 0;
 }
 
-svg {
-    display:block;
+
+#content {
+    z-index:1000;
+}
+#mission {
+    background:rgba(0, 0, 0, 0.8);
 }
