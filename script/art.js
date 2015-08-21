@@ -26,11 +26,7 @@
       type: 'delayed',
       duration: 800
     });
-    T = trianglePattern([160, 500]);
-    return $(window).resize(function() {
-      $("#art").width(Math.min(800, $(window).width()));
-      return $("#thisis").width(Math.min(800, $(window).width()));
-    });
+    return T = trianglePattern([160, 500]);
   });
 
   trianglePattern = function(P1) {
