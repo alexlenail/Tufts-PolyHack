@@ -1,24 +1,35 @@
-* { margin: 0; padding: 0; overflow: hidden; }
-
-#bg {
-	position: fixed;
-	width: 100vw;
-	height: 100vh;
+body {
 	background-color: #212222;
-	/*background-color: #ccc;*/
+    color:white;
 }
 
+#logo {
+    position:fixed;
+    z-index:-1;
+}
 #art {
-	position: fixed;
+	position: relative;
+    top:-10em;
 	width: 100vw;
-	height: 100vh;
-	z-index: 10;
+	height: 105vh;
 }
 
 #thisis {
-	position: fixed;
-	z-index: 10000;
+	position: absolute;
+    top:5em;
+    margin-left:6vw;
 	height: 260px;
 	width: 800px;
 	fill-opacity: 0;
+}
+
+
+#content {
+    z-index:1000;
+}
+#blank {
+    height:55vh;
+}
+#mission {
+    background:rgba(0, 0, 0, 0.8);
 }
