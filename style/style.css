@@ -1,24 +1,28 @@
-* { margin: 0; padding: 0; overflow: hidden; }
-
-#bg {
-	position: fixed;
-	width: 100vw;
-	height: 100vh;
+body {
 	background-color: #212222;
-	/*background-color: #ccc;*/
+    color:white;
+}
+
+#logo {
+    display:block;
 }
 
 #art {
-	position: fixed;
+	position: relative;
 	width: 100vw;
-	height: 100vh;
+	height: 105vh;
 	z-index: 10;
 }
 
 #thisis {
-	position: fixed;
+	position: absolute;
+    top:0px;
 	z-index: 10000;
 	height: 260px;
 	width: 800px;
 	fill-opacity: 0;
+}
+
+svg {
+    display:block;
 }
