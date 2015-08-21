@@ -1,6 +1,24 @@
 * { margin: 0; padding: 0; overflow: hidden; }
 
+#bg {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-color: #212222;
+	/*background-color: #ccc;*/
+}
 
+#art {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: 10;
+}
 
-
-
+#thisis {
+	position: fixed;
+	z-index: 10000;
+	height: 260px;
+	width: 800px;
+	fill-opacity: 0;
+}
