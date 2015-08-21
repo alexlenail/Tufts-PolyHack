@@ -17,9 +17,6 @@ $(document).ready ->
 
 	T = trianglePattern([160, 500])
 
-	$(window).resize -> 
-		$("#art").width(Math.min(800,$(window).width()))
-		$("#thisis").width(Math.min(800,$(window).width()))
 
 trianglePattern = (P1) -> 
 
