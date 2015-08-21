@@ -8,7 +8,7 @@ body {
     z-index:-1;
 }
 #art {
-	position: relative;
+	position:absolute;
     top:-10em;
 	width: 100vw;
 	height: 105vh;
