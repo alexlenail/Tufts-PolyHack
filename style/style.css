@@ -7,19 +7,17 @@ body {
     position:fixed;
     z-index:-1;
 }
-#blank {
-    height:105vh;
-}
 #art {
 	position: relative;
-    top:-15em;
+    top:-10em;
 	width: 100vw;
 	height: 105vh;
 }
 
 #thisis {
 	position: absolute;
-    top:0px;
+    top:5em;
+    margin-left:6vw;
 	height: 260px;
 	width: 800px;
 	fill-opacity: 0;
@@ -28,6 +26,9 @@ body {
 
 #content {
     z-index:1000;
+}
+#blank {
+    height:55vh;
 }
 #mission {
     background:rgba(0, 0, 0, 0.8);
