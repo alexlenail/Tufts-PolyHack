@@ -1,8 +1,8 @@
-* { margin: 0; padding: 0; overflow: hidden; }
+* { margin: 0; padding: 0; }
 
-/*body {
+body {
   position: relative;
-}*/
+}
 
 @media (min-width: 768px){
 .navbar-nav{
@@ -19,7 +19,7 @@
 	width: 100vw;
 	height: 100vh;
 	background-color: #212222;
-	/*background-color: #ccc;*/
+	z-index: -10000;
 }
 
 #art {
@@ -37,4 +37,16 @@
 	height: 260px;
 	width: 800px;
 	fill-opacity: 0;
+}
+
+#Mission {
+
+}
+
+#Logistics {
+	height: 1000px;
+}
+
+.col-md-offset-2 {
+	width: 800px;
 }
