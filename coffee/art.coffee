@@ -1,9 +1,10 @@
 
 # Constants and important variables
 root3 = Math.sqrt(3)
-canonicalGreen = [43, 152, 132]
+canonicalGreen  = [43, 152, 132]
 canonicalPurple = [149, 111, 168]
 canonicalOrange = [240, 130, 84]
+canonicalGray   = [33, 34, 34]
 colorVariance = 30
 sepDist = 3
 sidelength = 90
@@ -12,12 +13,12 @@ $(document).ready ->
 
 	v = new Vivus('logo', {type: 'delayed', duration: 800})
 
-	T = trianglePattern([50, 475])
+	T = trianglePattern(Snap('#logoTriangles'), [50, 475])
+
+	B = triangleBox(Snap('#something'))
 
 
-trianglePattern = (P1) -> 
-
-	paper = Snap('#art')
+trianglePattern = (paper, P1) -> 
 
 	P2 = [P1[0] + sidelength, P1[1]]
 	P3 = [P2[0] + sidelength / 2, P1[1] + sidelength * root3 / 2]
@@ -85,7 +86,9 @@ nearColor = ([r, g, b]) ->
 	return [rand * colorVariance + r, rand * colorVariance + g, rand * colorVariance + b ]
 
 
-triangleBox = (paper) -> 
+triangleBox = (paper) ->
+
+
 
 
 
