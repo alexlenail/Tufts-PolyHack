@@ -1,5 +1,19 @@
 * { margin: 0; padding: 0; overflow: hidden; }
 
+/*body {
+  position: relative;
+}*/
+
+@media (min-width: 768px){
+.navbar-nav{
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    float:none;
+    font-family: 'offside', sans-serif;
+}
+}  
+
 #bg {
 	position: fixed;
 	width: 100vw;
@@ -9,6 +23,7 @@
 }
 
 #art {
+	margin-top: 80px;
 	position: relative;
 	width: 740px;
 	height: 640px;
