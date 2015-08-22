@@ -1,20 +1,35 @@
+/* Tufts Polyhack Stylesheet */
+
+/* ===== General Styles ===== */
+
 * { margin: 0; padding: 0; }
 
 body {
   position: relative;
 }
 
+
+p {
+	font-size: 16px;
+}
+
+h1 {
+	font-family: 'offside', sans-serif;
+	font-weight: 700;
+	font-size: 72px;
+}
+
+
+/* ===== Mobile Views ===== */
+
 @media (max-width: 768px) {
-	#art, #logo {
+	#logoTriangles, #logo, nav {
 		display: none;
 	}
-
 }
 @media (min-width: 768px) {
 
-	#fallback {
-		display: none;
-	}
+	#fallback { display: none; }
 
 	.navbar-nav {
 	    margin: 0 auto;
@@ -23,7 +38,10 @@ body {
 	    float:none;
 	    font-family: 'offside', sans-serif;
 	}
-}  
+}
+
+
+/* ===== Content-Specific ===== */
 
 #bg {
 	position: fixed;
@@ -63,15 +81,6 @@ body {
 
 }
 
-p {
-	font-size: 16px;
-}
-
-h1 {
-	font-family: 'offside', sans-serif;
-	font-weight: 700;
-	font-size: 72px;
-}
 
 #Sponsors {
 	height: 600px;
