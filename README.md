@@ -6,6 +6,6 @@
     * Mission Statement
     * General Information
     * Some other stuff
-- finish the flicker animation of the header
-- position the header nicely, logo over the triangles
+- <s>finish the flicker animation of the header</s>
+- <s>position the header nicely, logo over the triangles</s>
 - have a fallback image in case we don't want to do the crazy animation thing (e.g. for phones)
