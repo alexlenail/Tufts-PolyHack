@@ -4,14 +4,25 @@ body {
   position: relative;
 }
 
-@media (min-width: 768px){
-.navbar-nav{
-    margin: 0 auto;
-    display: table;
-    table-layout: fixed;
-    float:none;
-    font-family: 'offside', sans-serif;
+@media (max-width: 768px) {
+	#art, #logo {
+		display: none;
+	}
+
 }
+@media (min-width: 768px) {
+
+	#fallback {
+		display: none;
+	}
+
+	.navbar-nav {
+	    margin: 0 auto;
+	    display: table;
+	    table-layout: fixed;
+	    float:none;
+	    font-family: 'offside', sans-serif;
+	}
 }  
 
 #bg {

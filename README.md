@@ -8,4 +8,4 @@
     * Some other stuff
 - <s>finish the flicker animation of the header</s>
 - <s>position the header nicely, logo over the triangles</s>
-- have a fallback image in case we don't want to do the crazy animation thing (e.g. for phones)
+- <s>have a fallback image in case we don't want to do the crazy animation thing (e.g. for phones)</s>
