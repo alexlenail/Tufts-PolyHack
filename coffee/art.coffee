@@ -1,21 +1,21 @@
 
 # Constants and important variables
 root3 = Math.sqrt(3)
-s = undefined
+paper = undefined
 canonicalGreen = [43, 152, 132]
 canonicalPurple = [149, 111, 168]
 canonicalOrange = [240, 130, 84]
 colorVariance = 30
 sepDist = 3
-sidelength = 80
+sidelength = 90
 
 $(document).ready ->
 
-	s = Snap('#art')
+	paper = Snap('#art')
 
-	v = new Vivus('thisis', {type: 'delayed', duration: 800})
+	v = new Vivus('logo', {type: 'delayed', duration: 800})
 
-	T = trianglePattern([160, 500])
+	T = trianglePattern([50, 475])
 
 
 trianglePattern = (P1) -> 
@@ -44,12 +44,11 @@ trianglePattern = (P1) ->
 
 flickerOne = (t) -> 
 
-	t.animate({opacity: 0.9}, 2000, mina.bounce, => t.animate({opacity: 1}, 2000, mina.bounce))
+	t.animate({opacity: 0.85}, 2000, mina.bounce, => t.animate({opacity: 1}, 2000, mina.bounce))
 
 flickerAll = (T) ->
 
 	_.map(_.shuffle(T), _.rateLimit(flickerOne, 60, true, => flickerAll(T)))
-
 
 
 triangleStreak = (bottomLeft, color, numTriangles) -> 
@@ -74,10 +73,10 @@ doubleTriangle = (S, color) ->
 	N = [S[0], S[1] - sidelength * root3]
 
 	[r, g, b] = nearColor(color)
-	one = s.polygon([S..., W..., E...]).attr({fill: Snap.rgb(r,g,b), opacity: 1})
+	one = paper.polygon([S..., W..., E...]).attr({fill: Snap.rgb(r,g,b), opacity: 1})
 
 	[r, g, b] = nearColor(color)
-	two = s.polygon([N..., W..., E...]).attr({fill: Snap.rgb(r,g,b), opacity: 1})
+	two = paper.polygon([N..., W..., E...]).attr({fill: Snap.rgb(r,g,b), opacity: 1})
 
 	return [one, two]
 
