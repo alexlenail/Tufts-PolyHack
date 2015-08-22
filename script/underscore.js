@@ -29,7 +29,7 @@
 // Dependencies
 // * underscore.js
 //
-_.rateLimit = function(func, rate, async) {
+_.rateLimit = function(func, rate, async, cb) {
   var queue = [];
   var timeOutRef = false;
   var currentlyEmptyingQueue = false;
@@ -47,6 +47,7 @@ _.rateLimit = function(func, rate, async) {
       }, rate);
     } else {
       currentlyEmptyingQueue = false;
+      cb()
     }
   };
   

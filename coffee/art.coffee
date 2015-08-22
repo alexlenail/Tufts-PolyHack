@@ -4,7 +4,7 @@ root3 = Math.sqrt(3)
 s = undefined
 canonicalGreen = [43, 152, 132]
 canonicalPurple = [149, 111, 168]
-canonicalOrange = [240, 134, 88]
+canonicalOrange = [240, 130, 84]
 colorVariance = 30
 sepDist = 3
 sidelength = 80
@@ -16,7 +16,6 @@ $(document).ready ->
 	v = new Vivus('thisis', {type: 'delayed', duration: 800})
 
 	T = trianglePattern([160, 500])
-
 
 
 trianglePattern = (P1) -> 
@@ -38,26 +37,19 @@ trianglePattern = (P1) ->
 
 	T = T.reduce((a, b) -> a.concat(b))
 
-	anim = _.rateLimit(initialLightUP, 40, true)
-	anim(t) for t in T
-
-	# anim = _.rateLimit(flicker, 60, true)
-	# anim(t) for t in T
+	flickerAll(T)
 
 	return T
 
-initialLightUP = (t) ->
 
-	t.animate({opacity:1}, 500, mina.bounce)
+flickerOne = (t) -> 
 
-# flickerOne = (t) -> 
+	t.animate({opacity: 0.9}, 2000, mina.bounce, => t.animate({opacity: 1}, 2000, mina.bounce))
 
-# 	t.animate({opacity: 0.8}, 1000, mina.bounce, => t.animate({opacity: 1}, 1000, mina.bounce))
+flickerAll = (T) ->
 
-# flickerAll = (T) ->
+	_.map(_.shuffle(T), _.rateLimit(flickerOne, 60, true, => flickerAll(T)))
 
-# 	while true
-# 		T = _.shuffle(T)
 
 
 triangleStreak = (bottomLeft, color, numTriangles) -> 
@@ -82,21 +74,21 @@ doubleTriangle = (S, color) ->
 	N = [S[0], S[1] - sidelength * root3]
 
 	[r, g, b] = nearColor(color)
-	one = s.polygon([S..., W..., E...]).attr({fill: Snap.rgb(r,g,b), opacity: 0})
+	one = s.polygon([S..., W..., E...]).attr({fill: Snap.rgb(r,g,b), opacity: 1})
 
 	[r, g, b] = nearColor(color)
-	two = s.polygon([N..., W..., E...]).attr({fill: Snap.rgb(r,g,b), opacity: 0})
+	two = s.polygon([N..., W..., E...]).attr({fill: Snap.rgb(r,g,b), opacity: 1})
 
 	return [one, two]
 
 
 nearColor = ([r, g, b]) ->
-	[(Math.random() - 0.5) * colorVariance + r, 
-	 (Math.random() - 0.5) * colorVariance + g, 
-	 (Math.random() - 0.5) * colorVariance + b ]
+	rand = Math.random() - 0.5
+	return [rand * colorVariance + r, rand * colorVariance + g, rand * colorVariance + b ]
 
 
-
+# In case at some poin in the future, we also want the triangles to appear suddenly
+# initialLightUP = (t) -> t.animate({opacity:1}, 8000, mina.bounce)
 
 
 
