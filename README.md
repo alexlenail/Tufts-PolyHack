@@ -1,7 +1,7 @@
 # Tufts-PolyHack
 
 ### Current things that need doing:
-- Add a bar at the top (using bootstrap) which is also a scrollspy. Make the scrolls nicely animated please!
+- <s>Add a bar at the bottom (using bootstrap) which is also a scrollspy.</s>
 - Add a set of content divs below the header
     * Mission Statement
     * General Information
