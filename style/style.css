@@ -6,19 +6,33 @@
 
 body {
   position: relative;
+  /*color: #353535;*/
+  color: #545454;
 }
 
 
 p {
 	font-size: 16px;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 h1 {
+	margin-top: 100px;
+	margin-bottom: 30px;
 	font-family: 'offside', sans-serif;
 	font-weight: 700;
 	font-size: 72px;
 }
 
+h2 {
+	font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+h3, h4 {
+	font-family: 'Source Sans Pro', sans-serif;
+	line-height: 1.4;
+}
 
 /* ===== Mobile Views ===== */
 
@@ -68,12 +82,20 @@ h1 {
 	fill-opacity: 0;
 }
 
+#content a {
+	color: #999;
+}
+
 #Mission {
-	height: 600px;
+
+}
+
+#mission {
+	margin-left: 5px;
+    /*font-family: 'offside', sans-serif;*/
 }
 
 #Logistics {
-	height: 600px;
 
 }
 
@@ -83,13 +105,9 @@ h1 {
 
 
 #Sponsors {
-	height: 600px;
-
 
 }
 
 #footer {
-	height: 600px;
-
-
+	margin: 300px 0px 80px;
 }
