@@ -6,8 +6,7 @@
 
 body {
   position: relative;
-  /*color: #353535;*/
-  color: #545454;
+  color:#DCDCDC;
 }
 
 
@@ -61,7 +60,7 @@ h3, h4 {
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
-	background-color: #212222;
+	background-color: #202727;
 	z-index: -10000;
 }
 
@@ -109,4 +108,5 @@ h3, h4 {
 
 #footer {
 	margin: 300px 0px 80px;
+
 }
