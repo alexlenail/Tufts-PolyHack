@@ -18,6 +18,9 @@ handlers:
 - url: /img
   static_dir: img
 
+- url: /sponsors
+  static_dir: sponsors
+
 - url: .*
   script: main.app
 
