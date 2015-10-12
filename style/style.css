@@ -106,8 +106,34 @@ h3, h4 {
 }
 
 
-#Sponsors {
+#Sponsors .col-sm-12 img,
+#Sponsors .col-sm-6 img,
+#Sponsors .col-sm-4 img,
+#Sponsors .col-sm-3 img {
+  /* max-height: 100px; */
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
 
+#Sponsors .row {
+  margin-bottom: 10px;
+}
+
+#Sponsors .row.title img {
+  max-width: 100%;
+}
+
+#Sponsors .row.gold img {
+  max-width: 50%;
+}
+
+#Sponsors .row.silver img {
+  max-width: 40%;
+}
+
+#Sponsors .row.bronze img {
+  max-width: 30%;
 }
 
 #footer {
