@@ -106,6 +106,14 @@ h3, h4 {
 }
 
 
+#Sponsors {
+    max-width: 100%;
+}
+
+#Sponsors img {
+    max-width: 100%;
+}
+
 #Sponsors .col-sm-12 img,
 #Sponsors .col-sm-6 img,
 #Sponsors .col-sm-4 img,
@@ -117,7 +125,7 @@ h3, h4 {
 }
 
 #Sponsors .row {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 #Sponsors .row.title img {
