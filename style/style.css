@@ -106,13 +106,15 @@ h3, h4 {
 }
 
 
+/*
 #Sponsors {
-    max-width: 100%;
+   max-width: 100%;
 }
 
 #Sponsors img {
     max-width: 100%;
 }
+*/
 
 #Sponsors .col-sm-12 img,
 #Sponsors .col-sm-6 img,
@@ -121,13 +123,53 @@ h3, h4 {
   /* max-height: 100px; */
   position: relative;
   margin: 0 auto;
-  text-align: center;
+  /*text-align: center; */
+}
+
+/* consider doing this to valign:
+ * http://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-div
+ */
+
+.sponsor-tripadvisor img {
+	width: 100%;
+}
+
+.sponsor-hubspot img {
+	padding-top: 20%;
+}
+
+.sponsor-bose img {
+	padding-top: 7%;
+}
+
+.sponsor-cimpress img {
+	padding-top: 12%;
+}
+
+.sponsor-twitter img {
+	max-height: 150px;
+}
+
+.sponsor-microsoft img {
+	padding-top: 15%;
+}
+
+.sponsor-cymbal img {
+	padding-top: 17%;
+}
+
+.sponsor-bttn img {
+	padding-top: 3%;
 }
 
 #Sponsors .row {
     margin-bottom: 10px;
 }
 
+#Sponsors .row img {
+	max-width: 100%;
+}
+/*
 #Sponsors .row.title img {
   max-width: 100%;
 }
@@ -143,7 +185,7 @@ h3, h4 {
 #Sponsors .row.bronze img {
   max-width: 30%;
 }
-
+*/
 #footer {
 	margin: 300px 0px 80px;
 
