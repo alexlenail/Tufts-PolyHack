@@ -155,11 +155,19 @@ h3, h4 {
 }
 
 .sponsor-cymbal img {
-	padding-top: 17%;
+	padding-top: 15%;
 }
 
 .sponsor-bttn img {
 	padding-top: 3%;
+}
+
+.sponsor-jawbone img {
+        padding-top: 20%;
+}
+
+.sponsor-bohemian img {
+        max-height: 20%;
 }
 
 #Sponsors .row {
