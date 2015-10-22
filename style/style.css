@@ -190,6 +190,10 @@ h3, h4 {
         max-height: 20%;
 }
 
+.sponsor-shattersquare img {
+        max-height: 20%;
+}
+
 #Sponsors .row {
     margin-bottom: 10px;
 }

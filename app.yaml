@@ -9,6 +9,9 @@ handlers:
   static_files: favicon.ico
   upload: favicon\.ico
 
+- url: /cheatsheet
+  static_files: cheatsheet.html
+
 - url: /style
   static_dir: style
 
