@@ -12,26 +12,42 @@ body {
 
 p {
 	font-size: 1.25em;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 h1 {
 	margin-top: 10vh;
 	margin-bottom: 3vh;
-	font-family: 'offside', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	font-size: 3em;
 }
 
 h2 {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Roboto', sans-serif;
 
 }
 
 h3, h4 {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	line-height: 1.4;
 }
+
+.cheattext{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+}
+
+.cheatheader{
+	font-family: 'Roboto', sans-serif;
+	font-size: 2em;
+}
+
+.cheatlogo {
+	margin-left: 20%;
+	margin-top: 50px;
+}
+
 
 /* ===== Mobile Views ===== */
 
@@ -95,6 +111,10 @@ h3, h4 {
 
 #mission {
 	margin-left: 5px;
+}
+
+.lists {
+	margin-left: 40px;
 }
 
 #Logistics {
@@ -197,6 +217,10 @@ h3, h4 {
 #footer {
 	margin: 300px 0px 80px;
 
+}
+
+#cheatfooter {
+	margin: 100px 0px 80px;
 }
 
 .logistics-valign {
