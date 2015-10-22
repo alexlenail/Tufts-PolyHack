@@ -11,6 +11,7 @@ handlers:
 
 - url: /cheatsheet
   static_files: cheatsheet.html
+  upload: cheatsheet\.html
 
 - url: /style
   static_dir: style
