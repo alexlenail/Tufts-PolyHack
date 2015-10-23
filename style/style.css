@@ -105,6 +105,10 @@ h3, h4 {
 	color: #999;
 }
 
+#Twitter .container .row {
+        text-align: center;
+}
+
 #Mission {
 
 }
