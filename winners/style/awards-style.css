@@ -1,0 +1,214 @@
+/* Tufts Polyhack Stylesheet */
+
+/* ===== General Styles ===== */
+
+* { margin: 0; padding: 0; }
+
+html, body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+body {
+    position: relative;
+    color:#DCDCDC;
+    background-color: #202027;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+p {
+    font-size: 1.25em;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+    margin-top: 10vh;
+    margin-bottom: 3vh;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+}
+
+h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+h3, h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    outline: none;
+}
+
+.turq {
+    color: #38A590;
+}
+
+.orange {
+    color: #D56231;
+}
+
+/* ===== Banner ===== */
+.banner {
+    position: relative;
+    margin: 0 auto;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.logo {
+    height: 100%;
+    width: auto;
+}
+
+.subtitle {
+    font-weight: 600;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-size: 3em;
+    margin:0 auto;
+    text-transform: uppercase;
+}
+
+.subtitle span {
+    font-weight: 800;
+    font-size: .9em;
+}
+
+/* ===== Awards ===== */
+
+.award {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.award .header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1%;
+    font-size: 1.8em;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.award .header .prize {
+    opacity: .5;
+    text-transform: none;
+}
+
+.photos {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.photos .carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.photos .carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.icon img {
+    margin-left: 10px;
+    height: .5em;
+    width: auto;
+}
+
+.photos .cover {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 1%, rgba(0,0,0,0) 34%, rgba(0,0,0,0.7) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(0,0,0,0)), color-stop(34%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.7))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 1%,rgba(0,0,0,0) 34%,rgba(0,0,0,0.7) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 1%,rgba(0,0,0,0) 34%,rgba(0,0,0,0.7) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 1%,rgba(0,0,0,0) 34%,rgba(0,0,0,0.7) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 1%,rgba(0,0,0,0) 34%,rgba(0,0,0,0.7) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
+
+}
+
+.photos .title {
+    color: white;
+    font-size: 1.5em;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 20px;
+
+    text-align: left;
+    box-sizing: border-box;
+    padding-right: 5px;
+    padding-left: 40px;
+    z-index: 100;
+}
+
+.photos .title a:hover {
+    opacity: .8;
+}
+
+.award .desc {
+    position: relative;
+    width: 100%;
+    height: auto;
+    color: white;
+    font-size: 1.2em;
+    box-sizing: border-box;
+    padding: 40px;
+    padding-top: 20px;
+    opacity: .85;
+}
+
+img {
+    outline: none !important;
+}
+
+/* ===== Mobile ===== */
+@media handheld, only screen and (max-width: 850px) {
+    .banner {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+    
+    .logo {
+        height: auto;
+        width: 60%;
+    }
+
+    .subtitle {
+        font-size: 3em;
+        margin-top: 50px;
+    }
+
+
+}
