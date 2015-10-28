@@ -6,7 +6,7 @@ This is the repository for the website [2015.polyhack.tufts.io](http://2015.poly
 
 This hackathon was an extraordinary endeavour put on by a large group of organizers who made everything possible, and I had the great honor of leading to put on this spectacular event. Thanks to Richard Kim, Arthur Berman, Alice Lee, Jared Moskowitz, Logan Garbarini, Max Bernstein, Kate Wasynczuk, Bruno Olmedo Quiroga, and Alex Gould for helping put together this event.
 
-![alt tag](https://raw.github.com/zfrenchee/Tufts-PolyHack/master/img/organizers.png)
+![alt tag](https://raw.github.com/zfrenchee/Tufts-PolyHack/master/img/organizers.jpg)
 
 Feel free to reach out to us at team at tufts.io for any inquiries. Or you can reach out to me specifically at alex at tufts.io.
 
