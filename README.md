@@ -23,3 +23,4 @@ Feel free to reach out to us at team at tufts.io for any inquiries. Or you can r
 - <s>have a fallback image in case we don't want to do the crazy animation thing (e.g. for phones)</s>
 
 If you're adding a new directory with static resources, make sure you update `ap.yaml` and add it to the list of static directories! Otherwise Google App Engine will throw an error and autodeploy will not work.
+
